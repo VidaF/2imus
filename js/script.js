@@ -196,6 +196,7 @@ scene.background = new THREE.Color('black');
 }
 
 let bunny1, bunny2;
+{
 const objLoader = new OBJLoader();
 objLoader.load('assets/bunny.obj', (root) => {
   bunny1 = root.clone();
@@ -203,7 +204,7 @@ objLoader.load('assets/bunny.obj', (root) => {
   bunny2 = root.clone();
   scene.add(bunny2);
 });
-
+}
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
   const width = canvas.clientWidth;
